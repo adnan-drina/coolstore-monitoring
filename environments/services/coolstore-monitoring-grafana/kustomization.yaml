@@ -1,0 +1,2 @@
+bases:
+  - overlays/user-app-coolstore
