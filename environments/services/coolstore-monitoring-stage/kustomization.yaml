@@ -1,0 +1,3 @@
+resources:
+- coolstore-catalog-stage/service-monitor.yaml
+- coolstore-inventory-stage/service-monitor.yaml

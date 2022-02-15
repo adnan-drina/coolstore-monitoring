@@ -1,0 +1,3 @@
+resources:
+- coolstore-monitoring-argo-app.yaml
+- coolstore-monitoring-app.yaml

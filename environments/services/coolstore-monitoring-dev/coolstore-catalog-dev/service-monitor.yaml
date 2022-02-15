@@ -1,0 +1,19 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    k8s-app: catalog-monitor
+  name: catalog-monitor-dev
+  namespace: coolstore-catalog-dev
+spec:
+  endpoints:
+    - interval: 30s
+      path: /actuator/prometheus
+      port: 8080-tcp
+      scheme: http
+  selector:
+    matchLabels:
+      app.kubernetes.io/component: catalog
+      app.kubernetes.io/instance: coolstore-catalog-dev
+      app.kubernetes.io/name: catalog
+      app.kubernetes.io/part-of: coolstore-catalog
