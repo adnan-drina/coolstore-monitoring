@@ -16,7 +16,7 @@ spec:
             - |
               set -e
               echo "Patching grafana datasource with token for authentication to prometheus"
-              TOKEN=`oc serviceaccounts get-token grafana-serviceaccount -n product-catalog-monitor`
+              TOKEN=`oc serviceaccounts get-token grafana-serviceaccount -n coolstore-monitoring`
               oc patch grafanadatasource prometheus --type='json' -p='[{"op":"add","path":"/spec/datasources/0/secureJsonData/httpHeaderValue1","value":"Bearer '${TOKEN}'"}]'
           imagePullPolicy: Always
           name: patch-grafana-ds
