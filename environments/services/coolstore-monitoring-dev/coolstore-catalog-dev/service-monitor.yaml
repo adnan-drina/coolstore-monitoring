@@ -9,7 +9,7 @@ spec:
   endpoints:
     - interval: 30s
       path: /actuator/prometheus
-      port: metrics
+      port: 8080-tcp
       scheme: http
   selector:
     matchLabels:
