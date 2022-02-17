@@ -15,7 +15,11 @@ spec:
     kind: Application
   - group: route.openshift.io
     jsonPointers:
-    - /spec/host
+    - /spec/datasources/secureJsonData
+    kind: Route
+  - group: integreatly.org/v1alpha1
+    jsonPointers:
+      - /spec/host
     kind: Route
   project: default
   source:
