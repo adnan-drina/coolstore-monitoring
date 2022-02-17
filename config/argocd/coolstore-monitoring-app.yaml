@@ -13,25 +13,13 @@ spec:
     jsonPointers:
     - /status
     kind: Application
-  - group: triggers.tekton.dev
-    jsonPointers:
-    - /status
-    kind: EventListener
-  - group: triggers.tekton.dev
-    jsonPointers:
-    - /status
-    kind: TriggerTemplate
-  - group: triggers.tekton.dev
-    jsonPointers:
-    - /status
-    kind: TriggerBinding
   - group: route.openshift.io
     jsonPointers:
     - /spec/host
     kind: Route
   - group: integreatly.org/v1alpha1
     jsonPointers:
-    - /spec/datasources/secureJsonData
+    - /spec/datasources/secureJsonData/httpHeaderValue1
     kind: GrafanaDataSource
   project: default
   source:
