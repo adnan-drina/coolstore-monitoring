@@ -16,13 +16,14 @@ spec:
   - group: route.openshift.io
     jsonPointers:
     - /spec/host
+    - /status/ingress
     kind: Route
-  - group: integreatly.org/v1alpha1
-    jqPathExpressions:
-    - .spec.datasources[] | select(.name == "Prometheus")
+  - group: integreatly.org
     kind: GrafanaDataSource
-    name: prometheus
-    namespace: coolstore-monitoring
+    jsonPointers:
+    - /spec/datasources/0/secureJsonData/httpHeaderValue1
+#    jqPathExpressions:
+#    - .spec.datasources[] | select(.name == "Prometheus")
   project: default
   source:
     path: environments/overlays
