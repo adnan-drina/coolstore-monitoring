@@ -29,6 +29,10 @@ spec:
     jsonPointers:
     - /spec/host
     kind: Route
+  - group: integreatly.org/v1alpha1
+    jsonPointers:
+    - /spec/datasources/secureJsonData
+    kind: GrafanaDataSource
   project: default
   source:
     path: environments/overlays
