@@ -13,6 +13,7 @@ spec:
       scheme: http
   selector:
     matchLabels:
-      app.kubernetes.io/component: catalog
+      app.kubernetes.io/component: spring-boot-service
+      app.kubernetes.io/instance: coolstore-catalog-stage-app
       app.kubernetes.io/name: catalog
       app.kubernetes.io/part-of: coolstore-catalog
