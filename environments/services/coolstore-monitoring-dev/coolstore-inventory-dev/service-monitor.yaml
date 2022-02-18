@@ -13,6 +13,7 @@ spec:
       path: /q/metrics
   selector:
     matchLabels:
+      app.kubernetes.io/component: quarkus-service
       app.kubernetes.io/instance: coolstore-inventory-dev-app
       app.kubernetes.io/name: inventory
       app.kubernetes.io/part-of: coolstore-inventory

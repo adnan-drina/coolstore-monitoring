@@ -22,8 +22,6 @@ spec:
     kind: GrafanaDataSource
     jsonPointers:
     - /spec/datasources/0/secureJsonData/httpHeaderValue1
-#    jqPathExpressions:
-#    - .spec.datasources[] | select(.name == "Prometheus")
   project: default
   source:
     path: environments/overlays
