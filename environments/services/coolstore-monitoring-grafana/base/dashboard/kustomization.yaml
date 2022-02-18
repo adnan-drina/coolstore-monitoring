@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - coolstore-catalog-statistics.yaml
   - coolstore-inventory-statistics.yaml
+  - coolstore-user-metrics.yaml
