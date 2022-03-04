@@ -5,3 +5,4 @@ resources:
   - session-secret.yaml
   - grafana-proxy-rbac.yaml
   - grafana.yaml
+  - patch-openshift-gitops-application-controller-role.yaml
